@@ -1,10 +1,12 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
+const cors = require('cors');
+const pessoaRoutes = require('./routes/pessoa-routes')
 
 const app = express();
-const port = 3000;
 
+app.use(cors())
 app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -13,12 +15,8 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.post('/api/pessoas', (req, res) => {
-    const { name, cpf, phone } = req.body;
-    console.log(`Recebido: Nome=${name}, CPF=${cpf}, Telefone=${phone}`);
-    res.json({ message: 'Pessoa cadastrada com sucesso!' });
-});
+app.use('/pessoas', pessoaRoutes)
 
-app.listen(port, () => {
-    console.log(`Servidor rodando em http://localhost:${port}`);
+app.listen(3000, () => {
+    console.log(`Servidor rodando em http://localhost:3000`);
 });
