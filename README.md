@@ -57,6 +57,6 @@ Como podemos ver temos os 3 campos proposto na atividade para ser preenchido, co
 
 Foi um trabalho bem legal de fazer, especialmente porque foi a minha primeira vez realmente lidando com JavaScript, HTML, CSS, Node.js e PostgreSQL. Claro, tive muitos erros no caminho, mas foi resolvendo esses problemas que aprendi a entender como o Front-end e o Back-end se conectam. Cada erro que consertei foi uma pequena vitória para mim e ajudou a crescer como estudante e futuro profissional. Esse projeto foi um desafio e tanto, mas estou feliz com o resultado final e com o que consegui entregar. Aprendi bastante e estou animado para aplicar tudo o que descobri em novos projetos.
 
-Obrigado Professor Tiago Ravache.
+Obrigado.
 
 
